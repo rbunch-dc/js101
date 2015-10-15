@@ -1,0 +1,355 @@
+<script type="text/javascript">
+	
+// // // A property has no ()
+// // // A function/method has ()
+
+// // 	// alert("hello world");
+// // 	// document.write("Hello World!");
+// // 	console.log("Hello World");
+
+// // 	// Variables
+// // 	//String - letters & numbers, meant for printing or user experience
+// // 	var fullName = "Robert Bunch";
+// // 	// document.write(fullName);
+
+// // 	fullName = 'Robert Bunch';
+// // 	var nationality = "American";
+// // 	// document.write(nationality);
+// // 	nationality = "British";
+// // 	// document.write(nationality);
+
+
+// // 	var myName = 'Rob "The Man" Bunch';
+// // 	myName = "Rob \"The Man\" Bunch";	
+// // 	myName = "Rob O'Malley Bunch";
+// // 	myName = 'Rob O\'Malley Bunch';
+
+// // 	fullName = myName;
+// // 	// document.write(fullName);	
+
+// // 	//Integer - number with no decimal points.
+// // 	var myAge = 37;
+// // 	var myAgeString = "37";
+
+// // 	var myBirthday = myAge + 1;
+// // 	// document.write(myBirthday);
+// // 	var notANumber = myAgeString + 1;
+// // 	notANumber = myName + 1;
+// // 	// document.write(notANumber);
+// // 	var doubleMyAge = myAge + myAge;
+// // 	// document.write(doubleMyAge);
+	
+// // 	//Force Number on a String
+// // 	var forceNumber = Number(myAgeString);
+// // 	var bogusNumber = Number(myName);
+// // 	// document.write(bogusNumber + 1);
+
+// // 	//FLoat = any number with a decimal point
+// // 	var floatNumber = 12.4;
+// // 	var newFloat = floatNumber + 1;
+// // 	var makeMeAnInteger = parseInt(newFloat);
+// // 	var makeMeAFloat = parseFloat(12);
+// // 	// document.write(makeMeAFloat);
+
+// // 	var makeMeAString = floatNumber.toString();
+// // 	// document.write(makeMeAString + 1);
+
+// // 	var theTruth = true; //Boolean
+// // 	var theLie = false; //Boolean
+// // 	var theWannabeTruth = "true"; //String
+// // 	var theOtherWannabe = 1; //Integer
+
+// // 	// document.write(typeof(theTruth));
+
+// // 	var myAge = 23;
+// // 	var myBirthday = myAge + 1;
+// // 	myAge++; //Incrament by 1 (same as above)
+// // 	myAge--; //Deincraemnt by 1 
+
+// // 	var theMenaningOfLife = 6 * 7; //Mult symbol
+	
+// // 	theMenaningOfLife = 84 / 2; //Division symbol
+
+// // 	var theNunberTwo = 8 % 3;
+// // 	// console.log(theNunberTwo);
+
+// // 	//Do More math
+// // 	//Parenethese
+// // 	var salesTotal = 3 * 12 + 4;
+// // 	var salesTotal = (12 + 4) * 3;
+// // 	// document.write(salesTotal);
+// // 	salesTotal = ((3 * (12 + 4)) * 3);
+// // 	// document.write(salesTotal);
+
+// // 	var firstName = "Robert";
+// // 	var lastName = "Bunch";
+// // 	var fullName = firstName + ' ' + lastName;
+// // 	var middleName = '"The Man"';
+// // 	fullName = firstName + ' ' + middleName + ' ' + lastName;
+// // 	var numberConcat = "2" + 2;
+// // 	var theHitchikersGuide = "The meaning of Life is " + 40 + 2;
+// // 	var theHitchikersGuide = "The meaning of Life is " + (40 + 2);
+// // 	// document.write(theHitchikersGuide);
+
+// // 	//Prompts
+// // 	// var name = prompt("What is your name?");
+// // 	var coinFlip = prompt("Heads or Tails?", "heads");
+
+// // 	//JS prompts are limited to the scope of the page.
+// // 	//HTML inputs/forms can be accessed within the page and passed on to other pages.
+
+// // 	//Conditionals
+// // 	var numberOfRobs = 1;
+// // 	var question = "What is your name?";
+// // 	var defaultAnswer = "Rob";
+// // 	var name = prompt(question, defaultAnswer);
+// // 	if(name === "Rob"){
+// // 		alert("That's my name too!");
+// // 		numberOfRobs++;
+// // 		alert(numberOfRobs);
+// // 	}else{
+// // 		alert("Nice to meet you " + name);
+// // 		numberOfRobs--;
+// // 		alert(numberOfRobs);		
+// // 	}
+
+// // 	// //AND
+// // 	// if ((name === "Rob") && (last === "Bunch")){
+
+// // 	// }
+
+// // 	// //OR
+// // 	// if ((name === "Rob") || (last === "Bunch")){
+		
+// // 	// }
+
+// // 	//Set up a prompt with a math question
+// // 	var answer = prompt("What is 2 + 2");
+// // 	//If the user gets it right, congratulate them
+// // 	answer = Number(answer);
+// // 	if(typeof(answer) === "number"){
+// // 		if(answer === 4){
+// // 			alert("Nice work, fool.");
+// // 		}else{
+// // 			alert("You are wrong. The answer is 4.");
+// // 		}
+// // 	}else{
+// // 		alert("You must enter a number!");
+// // 	}
+
+// // 	//If wrong, alert them of the correct answer
+
+
+// // 	//Give them two questions
+// // 	var answer2 = prompt("What is 2 + 3");
+// // 	var answer3 = prompt("What is 3 + 3");
+// // 	answer2 = Number(answer2);
+// // 	answer3 = Number(answer3);
+// // 	// if( (typeof(answer2) === "number") && (typeof(answer3 === "number")) ){
+// // 	// 	if((answer2 === 5) && (answer3 == 6)){
+// // 	// 		//user got both right
+// // 	// 		alert("You got both answers right!");
+// // 	// 	}else if((answer2 === 5) || (answer3 === 6)){
+// // 	// 		//user got both right
+// // 	// 		alert("You got one question right!");
+// // 	// 	}else{
+// // 	// 		alert("You got neither question right!");
+// // 	// 	}
+// // 	// }else{
+// // 	// 	alert("You must enter a number for both questions.");
+// // 	// }
+
+// // 	if( (typeof(answer2) === "number") && (typeof(answer3 === "number")) ){
+// // 		if((answer2 === 5) && (answer3 == 6)){
+// // 			//user got both right
+// // 			alert("You got both answers right!");
+// // 		}else if(answer2 === 5){
+// // 			alert("you got the first one right!");
+// // 		}else if(answer3 === 6){
+// // 			alert("You got the second question right!");
+// // 		}else{
+// // 			alert("You got neither question right!");
+// // 		}
+// // 	}else{
+// // 		alert("You must enter a number for both questions.");
+// // 	}
+
+// // 	//if they user gets both right, alert them
+// // 	//if they get one right, alert them
+// // 	//if they get none right, console them.
+
+// // 	var lotteryWinner = 3;
+// // 	var yourLotteryTicket = 238749271365435;
+// // 	if(yourLotteryTicket !== lotteryWinner){
+// // 		alert("Tough luck. No one wins the lottery.");
+// // 	}
+
+// // 	//Random numbers
+// // 	var randomNumber = Math.random(); //will generate a 16 digit number between 0 and 1
+// // 	// console.log(randomNumber);
+// // 	var betweenOneAndHundred = (randomNumber * 100) + 1;
+// // 	var roundedNumber = Math.round(betweenOneAndHundred);
+// // 	console.log(betweenOneAndHundred);
+// // 	console.log(roundedNumber);
+
+// // //Generate a random number between 1-10.
+// // var randomNumber = Math.floor((Math.random() * 10) + 1); //1-10
+// // var answer = prompt("Pick a number between 1-10");
+// // if(answer === Number(randomNumber)){
+// // 	alert("Your answer is correct!");
+// // }else if()
+
+// // //Ask the user for a number between 1-10.
+// // //If they match, alert.
+// // // If they don't alert.
+// // //Alert them if their number is within 2 of the actual number
+// // var randomNumber = Math.floor( (Math.random() * 10) + 1);
+// // var answer = prompt("Pick a number between 1-10");
+// // var answerAsANumber = Number(answer);
+// // if(answer === randomNumber){
+// // 	alert("You guessed it!");
+// // }else if(Math.abs(answerAsANumber - randomNumber) <=2  ){
+// // //is answer - random <= 2
+// // //is random - answer <= 2
+// // 	alert("You are wrong, but you are within 2. The number was: " + randomNumber);	
+// // }else{
+// // 	alert("You are not even close. The number was: " + randomNumber)
+// // }
+
+// //Arrays
+// 	var nfcSouthTeamOne = "Falcons";
+// 	var nfcSouthTeamTwo = "Saints";
+// 	var nfcSouthTeamThree = "Pathers";
+// 	var nfcSouthTeamFour = "Bucs";
+
+// 	// alert("The best team in the nfc South is the " + nfcSouthTeamOne);
+// 	// alert("The worst team in the nfc South is the " + nfcSouthTeamFour);
+
+// 	// var change = "Falcons";
+// 	// var the ="Saints";
+// 	// var names ="bucs";
+// 	// var ofTheVariabes = "Panthers";
+
+// 	var teams = ["Falcons", "Saints", "Panthers", "Bucs"];
+
+// 	alert("The best team in the nfc South is the " + teams[0]);
+// 	alert("The worst team in the nfc South is the " + teams[3]);
+
+// 	//Can put any kind of variable in an array.
+// 	//Numbers, Booleans, strings, even put arrays.
+
+// 	//http://www.w3schools.com/js/js_arrays.asp
+
+// 	teams[4] = "Ninjas";
+// 	teams[11] = "The Lost Team";
+// 	console.log(teams);
+
+// 	teams.pop(); //This will remove the last item in the array.
+// 	teams.push("The New Cowboys"); //Puts element on the end
+// 	teams.unshift("The Cowboys"); //Puts element on the front
+// 	teams.shift();  //Remove first
+
+// 	var atlTeams = [
+// 		"Braves",
+// 		"Falcons",
+// 		"Hawks",
+// 		"Thrashers"
+// 	];
+
+// 	teams.splice(2,1,"Atlanta United"); //Will start at element3. And will add whatever we give it. Will remove X starting with 3
+
+// 	teams.splice(2,1,"Atlanta United", "Cowboys"); //Will start at element3. And will 
+
+// 	teams.slice(0,1) //Will start copying at first number, and stop copying at the 2nd number.
+
+
+// 	var dcTeam = ["Rob", "Max", "Jake", "Joe"];
+// 	var firstName = "Mary";
+// 	if(firstName === dcTeam[0]){
+// 		alert("you work for digitalcrafts");
+// 	}else if(firstName === dcTeam[1]){
+// 		alert("you work for digitalcrafts");
+// 	}else if(firstName === dcTeam[2]){
+// 		alert("you work for digitalcrafts");
+// 	}else if(firstName === dcTeam[3]){
+// 		alert("you work for digitalcrafts");
+// 	}else{
+// 		alert("you don't work for DC");
+// 	}
+
+// 	// indexOf
+// 	if(dcTeam.indexOf(firstName) >= 0 ){
+// 		alert("You work for digitalcrafts");
+// 	}else{
+// 		alert("You don't");
+// 	}
+
+// // 99 bottles of beer on the wall, 99 bottles of beer
+// // 98 bottles of beer on the wall, 98 bottles of beer
+// // 97 bottles of beer on the wall, 97 bottles of beer
+
+// 	for(i = 0; i < 4; i++){
+// 		console.log(i);
+// 	}
+
+// //If first name is in dcteam array, alert "You work for DC"
+// //If not, alert "You don't work for digitalcrafts"
+
+
+// 	var ruleNumberOne = "You can do this";
+// 	var yourAttitude = prompt("Can you do this?","I can't do this@!!");
+// 	if (ruleNumberOne != yourAttitude){
+// 		alert("See, rule number one");
+// 	}
+
+// 	var dcTeam = ["Rob", "Max", "Jake", "Joe"];
+// 	for(i = 0; i < 4; i++){
+// 		if(dcTeam[i] === "Jake"){
+// 			var message = "You work for DigitalCrafts";
+// 		}
+// 	}
+// 	if(message === "You work for DigitalCrafts"){
+// 		alert(message);
+// 	}
+
+// 	//Break statements
+// 	var firstName = "Chance";
+// 	var dcClass = ["Chance", "Stephen", "Stuart", "Will", "Griffin", "Freddy", "Oliver", "Yoski", "Andrew", "Peter"];
+// 	// var matchFound = "";
+// 	for(i = 0; i < dcClass.length; i++){
+// 		if(firstName === dcClass[i]){
+// 			alert("You are a DC studnet!");
+// 			break;
+// 			alert("Can you read me?");
+// 		}
+// 		console.log(dcClass[i]);
+// 	}
+
+	var dcClass = ["Chance", "Stephen", "Stuart", "Will", "Griffin", "Freddy", "Oliver", "Yoski", "Andrew", "Peter"];
+	var dcClassRoles = ["The Joker", "The Student", "The Helper", "The Sleeper", "The Ninja", "The Ambitious One", "The Clueless One", "The Silent One", "The Butterfly", "The Chemist (BOOM!)"];
+
+	// for(i = 0; i < dcClass.length; i++){
+	// 	for(x = 0; x < dcClassRoles.length; x++){
+	// 		document.write(dcClass[i] + ' - ' + dcClassRoles[x] + '<br />');
+	// 	}
+	// }
+
+	var sudentWithRole;
+	for(i = 0; i < dcClass.length; i++){
+		for(x = 0; x < dcClassRoles.length; x++){
+			var chancesOfTrue = Math.random() * 100;
+			if(chancesOfTrue > 75){
+				sudentWithRole = dcClass[i] + " -- " + dcClassRoles[x];
+				document.write(dcClass[i] + ' - ' + dcClassRoles[x] + '<br />');				
+			}
+		}
+	}
+
+	var className = document.getElementById("class-name");
+
+
+</script>
+
+
+<div id="class-name">Hello, DigitalCrafts!</div>
+
